@@ -1,18 +1,19 @@
 {
   "name": "starsea-shares",
   "version": "1.0.0",
-  "description": "资源分享站，集成 Vercel 兑换码验证",
+  "description": "资源分享站，Vercel + Upstash Redis 兑换码验证",
   "main": "index.html",
   "scripts": {
     "dev": "vercel dev",
-    "deploy": "vercel --prod"
+    "deploy": "vercel --prod",
+    "init-codes": "node scripts/init-codes.js"
   },
-  "keywords": ["markdown", "github-pages", "vercel", "redeem"],
+  "keywords": ["markdown", "github-pages", "vercel", "redeem", "upstash"],
   "author": "鸿渚",
   "license": "MIT",
   "type": "module",
   "dependencies": {
-    "@vercel/kv": "^1.0.0"
+    "@upstash/redis": "^1.35.0"
   },
   "devDependencies": {
     "vercel": "^34.0.0"
