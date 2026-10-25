@@ -8,9 +8,9 @@ type: "web"
 icon: "fas fa-heart"
 tags: ["AI绘画", "教程", "资源分享", "UP主"]
 author: "鸿渚"
-date: "2026-01-29"
+date: "2026-10-26"
 cover: "/assets/covers/nijieai.jpg"
-url: "https://b23.tv/BCA8dg1"
+url: "https://space.bilibili.com/688841599"
 ---
 
 拟杰ai提供详细的AI绘画入门教程和实用工具推荐。

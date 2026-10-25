@@ -1,15 +1,16 @@
 ---
-id: "集合体Aa"
-resource_id: "集合体Aa"
-title: "集合体 Aa"
-description: "艺术与设计集合体。"
+id: "瞳瞳Aa-"
+resource_id: "瞳瞳Aa-"
+title: "瞳瞳Aa-"
+description: "个人分享的各种资源。"
+category: "个人站"
 type: "web"
-category: "设计"
+icon: "fas fa-file-archive"
+tags: ["AI绘画", "正太音", "UP主"]
 author: "鸿渚"
-date: "2026-01-31"
-icon: "fas fa-paint-brush"
-cover: "/assets/covers/jiheti.jpg"
-url: "https://aa.example.com"
+date: "2026-10-26"
+cover: "/assets/covers/fengyan.jpg"
+url: "https://space.bilibili.com/286498747"
 ---
 
 集合体Aa专注于AI绘画技术的深度解析和创作经验分享。

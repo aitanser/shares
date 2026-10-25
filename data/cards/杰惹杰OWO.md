@@ -7,10 +7,10 @@ category: "小男娘"
 type: "web"
 icon: "fas fa-blog"
 tags: ["男孩子", "小男孩", "小男娘","UP主", "个人站"]
-author: "杰惹杰"
-date: "2026-01-28"
+author: "鸿渚"
+date: "2026-10-26"
 cover: "/assets/covers/jieranjie.jpg"
-url: "https://b23.tv/Ung9NvJ"
+url: "https://space.bilibili.com/3461570088668106"
 ---
 
 杰惹杰OWO分享各种有趣的创意内容和艺术作品，风格独特。

@@ -7,10 +7,10 @@ category: "个人站"
 type: "web"
 icon: "fas fa-heart"
 tags: ["AI绘画", "教程", "资源分享", "UP主"]
-author: "仓鼠xixi"
-date: "2026-02-03"
+author: "鸿渚"
+date: "2026-10-26"
 cover: "/assets/covers/cangshu.jpg"
-url: "https://b23.tv/neGKc6G"
+url: "https://space.bilibili.com/520978838"
 ---
 
 仓鼠xixi是专注于AI绘画教程和资源分享的UP主，创意十足。
