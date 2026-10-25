@@ -2,128 +2,15 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>标签 · 鸿渚の分享页</title>
     <meta name="description" content="按标签浏览资源">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <style>
-        /* ===== 全局变量 ===== */
-        :root {
-            --cyan-400: #22d3ee;
-            --cyan-500: #06b6d4;
-            --cyan-600: #0891b2;
-            --blue-400: #60a5fa;
-            --blue-500: #3b82f6;
-            --blue-600: #2563eb;
-            --bg-page: #f4f6fa;
-            --bg-card: #ffffff;
-            --text-title: #0f172a;
-            --text-desc: #334155;
-            --text-muted: #5f6c80;
-            --border-light: #e9edf2;
-            --shadow-sm: 0 1px 3px rgba(0,0,0,0.02);
-            --shadow-md: 0 4px 12px rgba(0,20,40,0.04);
-            --shadow-hover: 0 12px 24px -8px rgba(6,182,212,0.15);
-            --radius-card: 20px;
-            --transition: all 0.2s ease;
-            --space-xs: 0.5rem;
-            --space-sm: 0.75rem;
-            --space-md: 1rem;
-            --space-lg: 1.5rem;
-            --space-xl: 2rem;
-            --touch-target-size: 44px;
-        }
-        body.dark-mode {
-            --bg-page: #0b1423;
-            --bg-card: #1a2639;
-            --text-title: #e2eafc;
-            --text-desc: #b9d1ec;
-            --text-muted: #7f9bc0;
-            --border-light: #2d3f5e;
-            --shadow-hover: 0 12px 24px -8px #06b6d440;
-        }
-        * { margin:0; padding:0; box-sizing:border-box; }
-        body {
-            font-family: 'Inter', sans-serif;
-            background: var(--bg-page);
-            color: var(--text-title);
-            line-height: 1.5;
-            transition: background 0.3s;
-        }
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 0 var(--space-md);
-        }
-
-        header {
-            background: var(--bg-card);
-            border-bottom: 1px solid var(--border-light);
-            padding: var(--space-md) 0;
-            margin-bottom: var(--space-lg);
-        }
-        .header-inner {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .site-title {
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: var(--cyan-600);
-            display: flex;
-            align-items: center;
-            gap: var(--space-sm);
-        }
-        .site-title i { color: var(--blue-500); }
-        .back-home {
-            background: var(--bg-page);
-            border: 1px solid var(--border-light);
-            color: var(--text-title);
-            padding: var(--space-sm) var(--space-lg);
-            border-radius: 40px;
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 0.9rem;
-            transition: var(--transition);
-            min-height: var(--touch-target-size);
-        }
-        .back-home:hover { border-color: var(--cyan-400); color: var(--cyan-600); }
-        .theme-toggle {
-            background: var(--bg-page);
-            border: 1px solid var(--border-light);
-            color: var(--text-title);
-            width: var(--touch-target-size);
-            height: var(--touch-target-size);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            transition: var(--transition);
-            font-size: 1.2rem;
-        }
-        .theme-toggle:hover { border-color: var(--cyan-400); transform: rotate(15deg); }
-
-        /* 面包屑 */
-        .breadcrumb {
-            display: flex;
-            align-items: center;
-            gap: var(--space-xs);
-            margin-bottom: var(--space-lg);
-            font-size: 0.9rem;
-            color: var(--text-muted);
-        }
-        .breadcrumb a { color: var(--text-muted); text-decoration: none; }
-        .breadcrumb a:hover { color: var(--cyan-600); }
-
-        /* 标签云 */
         .tag-cloud-large {
             display: flex;
             flex-wrap: wrap;
@@ -146,32 +33,23 @@
             text-decoration: none;
             display: inline-block;
         }
-        .tag-item-large:hover {
-            background: var(--cyan-500);
-            color: white;
-            border-color: var(--cyan-500);
-            transform: scale(1.05);
+        .tag-item-large:hover,
+        .tag-item-large.active {
+            background: var(--primary-500);
+            color: #fff;
+            border-color: var(--primary-500);
         }
-
-        /* 标签详情区域 */
         .tag-detail {
             background: var(--bg-card);
             border-radius: var(--radius-card);
             padding: var(--space-xl);
             border: 1px solid var(--border-light);
+            margin-bottom: var(--space-xl);
         }
         .tag-detail h2 {
             font-size: 1.5rem;
-            color: var(--cyan-600);
+            color: var(--primary-600);
             margin-bottom: var(--space-lg);
-            display: flex;
-            align-items: center;
-            gap: var(--space-sm);
-        }
-        .tag-resources {
-            display: flex;
-            flex-direction: column;
-            gap: var(--space-md);
         }
         .tag-resource-item {
             display: flex;
@@ -186,183 +64,111 @@
             background: var(--bg-page);
             border-radius: var(--radius-card);
         }
-        .tag-resource-item:last-child {
-            border-bottom: none;
-        }
         .tag-resource-icon {
             width: 40px;
             height: 40px;
             border-radius: 50%;
-            background: linear-gradient(145deg, var(--cyan-400), var(--blue-400));
+            background: linear-gradient(145deg, var(--primary-400), var(--secondary-400));
             display: flex;
             align-items: center;
             justify-content: center;
-            color: white;
+            color: #fff;
             margin-right: var(--space-md);
         }
-        .tag-resource-info {
-            flex: 1;
-        }
-        .tag-resource-info h4 {
-            font-size: 1.1rem;
-            margin-bottom: 4px;
-        }
-        .tag-resource-info p {
-            color: var(--text-muted);
-            font-size: 0.85rem;
-        }
-
-        .loading, .empty-state {
-            text-align: center;
-            padding: var(--space-xl);
-            background: var(--bg-card);
-            border-radius: var(--radius-card);
-        }
-
-        footer {
-            text-align: center;
-            padding: var(--space-xl) 0;
-            color: var(--text-muted);
-            border-top: 1px solid var(--border-light);
-            margin-top: var(--space-xl);
-        }
-        footer a {
-            color: var(--cyan-500);
-            text-decoration: none;
-            margin: 0 var(--space-xs);
-        }
+        .tag-resource-info h4 { font-size: 1.1rem; margin-bottom: 4px; }
+        .tag-resource-info p { color: var(--text-muted); font-size: 0.85rem; }
     </style>
 </head>
 <body>
-    <!-- 防复制脚本 -->
-    <script>
-        (function() {
-            document.addEventListener('contextmenu', e => e.preventDefault());
-            document.addEventListener('selectstart', e => e.preventDefault());
-            document.addEventListener('keydown', e => {
-                if (e.ctrlKey || e.key === 'F12' || (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J' || e.key === 'C'))) e.preventDefault();
-            });
-            document.addEventListener('copy', e => e.preventDefault());
-        })();
-    </script>
-
-    <header>
-        <div class="container">
-            <div class="header-inner">
-                <div class="site-title"><i class="fas fa-tags"></i> 标签浏览</div>
-                <div style="display: flex; gap: var(--space-sm);">
-                    <a href="index.html" class="back-home"><i class="fas fa-arrow-left"></i> 返回首页</a>
-                    <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
-                </div>
-            </div>
-        </div>
-    </header>
-
     <main class="container">
-        <!-- 面包屑 -->
-        <div class="breadcrumb">
-            <a href="index.html">首页</a> <i class="fas fa-chevron-right" style="font-size:0.7rem;"></i>
-            <span>标签</span>
-        </div>
+        <div class="breadcrumb" id="breadcrumb"></div>
 
-        <!-- 标签云区域 -->
         <div id="tagCloudContainer" class="tag-cloud-large">
             <div class="loading"><i class="fas fa-spinner fa-spin"></i> 加载标签中...</div>
         </div>
 
-        <!-- 标签详情区域（默认隐藏，点击标签后显示） -->
-        <div id="tagDetailContainer" class="tag-detail" style="display: none;">
-            <h2 id="selectedTagTitle"><i class="fas fa-hashtag" style="color: var(--cyan-500);"></i> <span id="selectedTagName"></span></h2>
-            <div id="tagResourcesList" class="tag-resources"></div>
+        <div id="tagDetailContainer" class="tag-detail" style="display:none;">
+            <h2><i class="fas fa-hashtag" style="color:var(--primary-500);"></i>
+                <span id="selectedTagName"></span></h2>
+            <div id="tagResourcesList"></div>
         </div>
     </main>
 
-    <footer>
-        <div class="container">
-            <p>© 鸿渚の分享页 · 2025-2026</p>
-            <p style="margin-top: 0.5rem;">
-                <a href="about.html">📘 关于</a> · <a href="hot.html">🔥 热门</a> · <a href="terms.html">📄 用户协议</a>
-                · <a href="changelog.html">📋 更新日志</a> · <a href="links.html">🔗 友情链接</a> · <a href="privacy.html">🔒 隐私</a>
-            </p>
-        </div>
-    </footer>
-
     <script src="js/common.js"></script>
     <script>
-        (async function() {
-            const tagCloudDiv = document.getElementById('tagCloudContainer');
-            const tagDetailDiv = document.getElementById('tagDetailContainer');
-            const selectedTagSpan = document.getElementById('selectedTagName');
-            const resourcesListDiv = document.getElementById('tagResourcesList');
+        (async function () {
+            await loadHeader();
+            await loadFooter();
+            renderBreadcrumb('tags');
 
-            let allResources = [];
-            let tagMap = new Map(); // tag -> array of resources
+            const cloud = document.getElementById('tagCloudContainer');
+            const detail = document.getElementById('tagDetailContainer');
+            const nameEl = document.getElementById('selectedTagName');
+            const listEl = document.getElementById('tagResourcesList');
+
+            let tagMap = new Map();
 
             try {
-                allResources = await loadAllResources();
-
-                // 构建标签映射
-                allResources.forEach(res => {
-                    const tags = res.meta.tags;
-                    if (!tags) return;
-                    let tagArray = [];
-                    if (typeof tags === 'string') {
-                        tagArray = tags.split(',').map(t => t.trim().replace(/^#/, ''));
-                    } else if (Array.isArray(tags)) {
-                        tagArray = tags.map(t => t.trim().replace(/^#/, ''));
-                    }
-                    tagArray.forEach(tag => {
-                        if (!tag) return;
+                const all = await loadAllResources('?t=' + Date.now());
+                for (const res of all) {
+                    let tags = res.meta.tags;
+                    if (!tags) continue;
+                    if (typeof tags === 'string') tags = tags.split(',').map(t => t.trim());
+                    if (!Array.isArray(tags)) continue;
+                    tags.map(t => t.replace(/^#/, '').trim()).filter(Boolean).forEach(tag => {
                         if (!tagMap.has(tag)) tagMap.set(tag, []);
                         tagMap.get(tag).push(res);
                     });
+                }
+
+                if (tagMap.size === 0) {
+                    cloud.innerHTML = '<div class="empty-state">暂无标签</div>';
+                    return;
+                }
+
+                const sorted = [...tagMap.entries()].sort((a, b) => b[1].length - a[1].length);
+                cloud.innerHTML = sorted.map(([tag, list]) =>
+                    `<a href="#${encodeURIComponent(tag)}" class="tag-item-large" data-tag="${escapeHtml(tag)}">#${escapeHtml(tag)} (${list.length})</a>`
+                ).join('');
+
+                cloud.querySelectorAll('.tag-item-large').forEach(el => {
+                    el.addEventListener('click', e => {
+                        e.preventDefault();
+                        const tag = el.dataset.tag;
+                        history.replaceState(null, '', '#' + encodeURIComponent(tag));
+                        showTag(tag);
+                    });
                 });
 
-                // 渲染标签云
-                if (tagMap.size === 0) {
-                    tagCloudDiv.innerHTML = '<div class="empty-state">暂无标签</div>';
-                } else {
-                    const sortedTags = Array.from(tagMap.entries()).sort((a, b) => b[1].length - a[1].length);
-                    tagCloudDiv.innerHTML = sortedTags.map(([tag, resources]) => {
-                        return `<a href="#" class="tag-item-large" data-tag="${escapeHtml(tag)}">#${escapeHtml(tag)} (${resources.length})</a>`;
-                    }).join('');
-
-                    // 为每个标签添加点击事件
-                    document.querySelectorAll('.tag-item-large').forEach(el => {
-                        el.addEventListener('click', (e) => {
-                            e.preventDefault();
-                            const tag = el.dataset.tag;
-                            showTagDetail(tag);
-                        });
-                    });
-                }
+                const hash = decodeURIComponent(location.hash.slice(1));
+                if (hash && tagMap.has(hash)) showTag(hash);
             } catch (e) {
-                tagCloudDiv.innerHTML = `<div class="error-state">加载失败：${escapeHtml(e.message)}</div>`;
+                cloud.innerHTML = `<div class="error-state">加载失败：${escapeHtml(e.message)}</div>`;
             }
 
-            function showTagDetail(tag) {
+            function showTag(tag) {
                 const resources = tagMap.get(tag) || [];
-                selectedTagSpan.textContent = tag;
-                if (resources.length === 0) {
-                    resourcesListDiv.innerHTML = '<p class="empty-state">该标签下暂无资源</p>';
-                } else {
-                    resourcesListDiv.innerHTML = resources.map(res => {
-                        const meta = res.meta;
-                        const detailUrl = `detail.html?id=${encodeURIComponent(meta.id)}`;
+                nameEl.textContent = tag;
+                listEl.innerHTML = resources.length === 0
+                    ? '<p class="empty-state">该标签下暂无资源</p>'
+                    : resources.map(res => {
+                        const m = res.meta;
                         return `
-                            <a href="${detailUrl}" class="tag-resource-item">
-                                <div class="tag-resource-icon"><i class="fas ${meta.icon || 'fa-star'}"></i></div>
+                            <a href="detail.html?id=${encodeURIComponent(m.id)}" class="tag-resource-item">
+                                <div class="tag-resource-icon"><i class="fas ${m.icon || 'fa-star'}"></i></div>
                                 <div class="tag-resource-info">
-                                    <h4>${escapeHtml(meta.title)}</h4>
-                                    <p>${escapeHtml(meta.description || '').substring(0, 80)}${meta.description && meta.description.length > 80 ? '…' : ''}</p>
+                                    <h4>${escapeHtml(m.title || '无题')}</h4>
+                                    <p>${escapeHtml((m.description || '').slice(0, 80))}</p>
                                 </div>
-                            </a>
-                        `;
+                            </a>`;
                     }).join('');
-                }
-                tagDetailDiv.style.display = 'block';
-                // 平滑滚动到详情区
-                tagDetailDiv.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+                document.querySelectorAll('.tag-item-large').forEach(el => {
+                    el.classList.toggle('active', el.dataset.tag === tag);
+                });
+
+                detail.style.display = 'block';
+                detail.scrollIntoView({ behavior: 'smooth', block: 'start' });
             }
         })();
     </script>
