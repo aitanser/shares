@@ -17,7 +17,6 @@
     "data/cards/二次元画像詳細検索.md",
     "data/cards/拟杰ai.md",
     "data/cards/杰惹杰OWO.md",
-    "data/cards/柯基搜图.md",
     "data/cards/白e漫画资源.md",
     "data/cards/图片混淆解混淆.md",
     "data/cards/小番茄V3.0.md",
@@ -30,10 +29,6 @@
     "data/cards/风炎小正太.md",
     "data/cards/universal-download-helper.md"
   ],
-  "articles": [
-    "data/articles/ai-painting-guide.md"
-  ],
-  "files": [
-    "data/files/design-resources-details.md"
-  ]
+  "articles": ["data/articles/ai-painting-guide.md"],
+  "files": ["data/files/design-resources-details.md"]
 }
