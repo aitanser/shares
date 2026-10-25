@@ -1,5 +1,5 @@
 ---
-id: "ai_painting"
+id: "design_resources"
 title: "UI设计资源包完整版"
 fileName: "design-resources-v2.1.zip"
 fileSize: "256.8 MB"
