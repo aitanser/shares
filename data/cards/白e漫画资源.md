@@ -26,5 +26,5 @@ fileRef: "data/files/bai-e-details.md"
 - 讨厌广告干扰的读者
 - 需要快速启动的应用
 
-下载链接：[https://gitee.com/nightmare97/EhViewer](https://gitee.com/nightmare97/EhViewer)
-文档链接：[https://gitee.com/nightmare97/EhViewer/blob/test/README.md](https://gitee.com/nightmare97/EhViewer/blob/test/README.md)
+下载链接：[Gitee 仓库](https://gitee.com/nightmare97/EhViewer)
+文档链接：[Gitee 仓库](https://gitee.com/nightmare97/EhViewer/blob/test/README.md)

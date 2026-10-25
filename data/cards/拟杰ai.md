@@ -26,4 +26,4 @@ url: "https://space.bilibili.com/688841599"
 - 工具使用指南
 - 实践案例分享
 
-访问链接：[https://b23.tv/BCA8dg1](https://b23.tv/BCA8dg1)
+访问链接：[B站链接](https://space.bilibili.com/688841599)

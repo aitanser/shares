@@ -25,5 +25,5 @@ fileRef: "data/files/lv-e-details.md"
 - 追求轻量级应用的用户
 - 需要稳定阅读体验
 
-下载链接：[https://github.com/xiaojieonly/Ehviewer_CN_SXJ/releases](https://github.com/xiaojieonly/Ehviewer_CN_SXJ/releases)
-文档链接：[https://github.com/xiaojieonly/Ehviewer_CN_SXJ/blob/BiLi_PC_Gamer/README.md](https://github.com/xiaojieonly/Ehviewer_CN_SXJ/blob/BiLi_PC_Gamer/README.md)
+下载链接：[GitHub 仓库](https://github.com/xiaojieonly/Ehviewer_CN_SXJ/releases)
+文档链接：[GitHub 仓库](https://github.com/xiaojieonly/Ehviewer_CN_SXJ/blob/BiLi_PC_Gamer/README.md)

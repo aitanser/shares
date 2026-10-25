@@ -26,5 +26,5 @@ fileRef: "data/files/cai-e-details.md"
 - 从GitHub releases下载
 - 查看中文文档了解详情
 
-下载链接：[https://github.com/Ehviewer-Overhauled/Ehviewer/releases/](https://github.com/Ehviewer-Overhauled/Ehviewer/releases/)
-文档链接：[https://github.com/Ehviewer-Overhauled/Ehviewer/blob/1.8.x.x/docs/README/zh-cn.md](https://github.com/Ehviewer-Overhauled/Ehviewer/blob/1.8.x.x/docs/README/zh-cn.md)
+下载链接：[GitHub 仓库](https://github.com/Ehviewer-Overhauled/Ehviewer/releases/)
+文档链接：[GitHub 仓库](https://github.com/Ehviewer-Overhauled/Ehviewer/blob/1.8.x.x/docs/README/zh-cn.md)

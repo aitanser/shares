@@ -25,4 +25,4 @@ Sabersort是一个开源的Python脚本，旨在帮助用户批量处理本地�
 - 大量图片需要整理溯源
 - 收集Pixiv画师作品集
 
-安装方式：[https://github.com/phoxwupsh/sabersort](https://github.com/phoxwupsh/sabersort)
+安装方式：[GitHub 仓库](https://github.com/phoxwupsh/sabersort)

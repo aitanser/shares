@@ -26,4 +26,4 @@ url: "https://space.bilibili.com/286498747"
 - 创作经验借鉴
 - 技术深度提升
 
-访问链接：[https://b23.tv/ve4uYzU](https://b23.tv/ve4uYzU)
+访问链接：[B站链接](https://space.bilibili.com/286498747)

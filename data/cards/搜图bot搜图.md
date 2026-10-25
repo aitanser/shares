@@ -26,4 +26,4 @@ url: "https://soutubot.moe"
 - 上传图片进行识别
 - 获取识别结果
 
-访问链接：[https://soutubot.moe/](https://soutubot.moe/)
+访问链接：[点击我](https://soutubot.moe/)

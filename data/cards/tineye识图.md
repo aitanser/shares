@@ -26,4 +26,4 @@ tineye是专业的反向图片搜索引擎，支持查找图片在互联网上�
 - 图片使用情况调查
 - 图片来源查找
 
-访问链接：[https://tineye.com/](https://tineye.com/)
+访问链接：[点击我](https://tineye.com/)

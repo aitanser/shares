@@ -26,4 +26,4 @@ trace搜图是专业的动漫识图工具，可以精确识别动漫截图出处
 - 定位具体动画场景
 - 动漫截图分析
 
-访问链接：[https://trace.moe/](https://trace.moe/)
+访问链接：[点击我](https://trace.moe/)

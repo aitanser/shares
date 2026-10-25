@@ -26,4 +26,4 @@ url: "https://space.bilibili.com/520978838"
 - 创作技巧分享
 - 实用工具推荐
 
-访问链接：[https://b23.tv/neGKc6G](https://b23.tv/neGKc6G)
+访问链接：[B站链接](https://space.bilibili.com/520978838)

@@ -26,5 +26,5 @@ shotalove专注于分享正太相关图片与资源，适合喜欢正太题材�
 - 关注最新更新
 - 查看关于页面了解更多
 
-访问链接：[https://shotalove.fun/](https://shotalove.fun/)
-文档链接：[https://shotalove.fun/about/](https://shotalove.fun/about/)
+访问链接：[点击我](https://shotalove.fun/)
+文档链接：[点击我](https://shotalove.fun)

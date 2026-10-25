@@ -26,4 +26,4 @@ SauceNAO是Pixiv图片搜索专家，拥有庞大的数据库支持多种图片�
 - 图片来源追溯
 - 艺术创作参考
 
-访问链接：[https://saucenao.com/](https://saucenao.com/)
+访问链接：[点击我](https://saucenao.com/)

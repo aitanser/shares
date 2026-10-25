@@ -26,4 +26,4 @@ url: "https://space.bilibili.com/3461570088668106"
 - 创意十足
 - 艺术性强
 
-访问链接：[https://b23.tv/Ung9NvJ](https://b23.tv/Ung9NvJ)
+访问链接：[B站链接](https://space.bilibili.com/3461570088668106)

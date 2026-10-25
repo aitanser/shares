@@ -26,4 +26,4 @@ nhentai是一个专注于漫画资源的网站，提供海量优质漫画内容�
 - 多语言版本适合不同用户需求
 - 定期查看更新内容
 
-访问链接：[https://nhentai.net/](https://nhentai.net/)
+访问链接：[点击我](https://nhentai.net/)

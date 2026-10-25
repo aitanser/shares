@@ -26,4 +26,4 @@ MangaMeeya 是一款经典的Windows平台漫画阅读软件，以其极快的�
 - 习惯在电脑上看漫画的用户
 - 追求阅读流畅度的读者
 
-下载链接：[https://github.com/fenghou1st/MangaMeeya-ChineseTranslation/releases](https://github.com/fenghou1st/MangaMeeya-ChineseTranslation/releases)
+下载链接：[GitHub 仓库](https://github.com/fenghou1st/MangaMeeya-ChineseTranslation/releases)

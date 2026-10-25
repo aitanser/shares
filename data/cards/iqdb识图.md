@@ -26,4 +26,4 @@ iqdb识图支持多图库同时搜索，提高动漫图片查找效率。
 - 多来源搜索结果
 - 效率优先的搜索方式
 
-访问链接：[http://www.iqdb.org/](http://www.iqdb.org/)
+访问链接：[点击我](http://www.iqdb.org/)

@@ -25,5 +25,5 @@ chin2以高质量的翻译和精致的排版著称，提供优质的漫画阅读
 - 注重细节的排版
 - 持续优化的阅读体验
 
-访问链接：[https://www.chin2.net/](https://www.chin2.net/)
-团队介绍：[https://www.chin2.net/Team](https://www.chin2.net/Team)
+访问链接：[点击我](https://www.chin2.net/)
+团队介绍：[点击我](https://www.chin2.net)
